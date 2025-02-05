@@ -7,12 +7,12 @@
 #booleans represents true/false, used in evaluations
 #graduated = False
 
-""" def add(x,y):
-    print(x+y) """
+def add(x,y):
+    print(x+y)
 #input asks the user a question and stores their response as a value
-#bill = float(input("How much did the bill cost?"))
-#print(type(bill))
-#add(40, bill)
+bill = float(input("How much did the bill cost?"))
+print(type(bill))
+add(40, bill)
 
 #Lists
 #students = ("Joanna", "Deivid", "David", "Other David", "Ethan")
@@ -33,7 +33,17 @@ print(x,y) """
 """ values = [1,2.23,5,7,2,30,15]
 print(values)
 for i in values:
-    print(i) """
+    print(i)
 
 print(values[0])
-print(values[6])
+print(values[6]) """
+
+""" x = "this is a thing"
+y= x.split( )
+z = y[0]
+print(y)
+print(z) """
+
+""" string = "fchdfsuhdihfsdiuhishfs"
+length = len(string)
+print("The string has", length, "characters.") """
