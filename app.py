@@ -6,14 +6,7 @@
 #wallet: 5.45
 #booleans represents true/false, used in evaluations
 #graduated = False
-
-def add(x,y):
-    print(x+y)
 #input asks the user a question and stores their response as a value
-bill = float(input("How much did the bill cost?"))
-print(type(bill))
-add(40, bill)
-
 #Lists
 #students = ("Joanna", "Deivid", "David", "Other David", "Ethan")
 #similar to saying for i in range(5): print(students[i])
@@ -44,6 +37,15 @@ z = y[0]
 print(y)
 print(z) """
 
-""" string = "fchdfsuhdihfsdiuhishfs"
-length = len(string)
-print("The string has", length, "characters.") """
+#calculator
+""" bill = float(input("Bill cost:"))
+print(type(bill))
+tip = float(input("Tip amount:"))
+print(type(tip))
+total = (float(bill + tip))
+print("The total is", total) """
+
+string = (input("Words/Characters:"))
+print(type(string))
+length=len(string)
+print("The length of those words/characters is:", length)
