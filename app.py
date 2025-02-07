@@ -45,7 +45,46 @@ print(type(tip))
 total = (float(bill + tip))
 print("The total is", total) """
 
-string = (input("Words/Characters:"))
+#character calculator
+""" string = (input("Words/Characters:"))
 print(type(string))
 length=len(string)
-print("The length of those words/characters is:", length)
+print("The length of those words/characters is:", length) """
+
+def login(password):
+    #if statement evaluates to true we go to next line
+    if password == "secret":
+        print("logged in")
+    else:
+        print("incorrect")
+x = input("what is the password?")
+login(x)
+
+""" def grade(score):
+    if score >= 92:
+        print("A")
+    elif score >= 82:
+        print("B")
+    elif score >= 72:
+        print("C")
+    else:
+        print("F")
+x = int(input("What's the score?"))
+grade(x) """
+
+""" food = (input("Give me a food:"))
+print(type(food))
+name = (input("Give me a name:"))
+print(type(name))
+adjective = (input("Give me a adjective:"))
+print(type(adjective))
+noun = (input("Give me a name:"))
+print(type(noun))
+food1 = (input("Give me another food:"))
+print(type(food1))
+name1 = (input("Give me another name:"))
+print(type(name1)) """
+
+
+
+
