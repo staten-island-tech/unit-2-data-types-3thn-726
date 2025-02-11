@@ -86,7 +86,7 @@ if not raining == true:
 if raining == false:
     print("go for a walk") """
 
-food = (input("Give me a food:"))
+""" food = (input("Give me a food:"))
 print(type(food))
 name = (input("Give me a male celebrities name:"))
 print(type(name))
@@ -102,4 +102,36 @@ verb2 = (input("Give me another verb:"))
 print(type(verb2))
 print("Me and my friend decided to get", food, ". Then, my friend", name, "forgot he had a class he had to go to. So he", verb, "his way to his class, but bumped into a", adjective, "looking man. After he got a lecture from the guy, he jumped onto a", noun, ", which almost got him arrested so he", verb2, "away. He then got jumped by", number,"men in children's underwear, So he boarded a flight to North Korea and was never seen again.")
 
+ """
 
+#Check i X is a factor Modulo
+#if factor == true add to list
+#loop from 2 to Y for i in range(2,15)
+#if x isFactor and y isFactor then add to list
+
+""" number = int(input("Number:"))
+print(type(number))
+
+if number % 2 == 0:
+    print("Your number is Even!")
+else:
+    print("Your number is odd!") """
+
+bill = float(input("Bill Cost:"))
+print(type(bill))
+print("How was Service? Please choose an option:")
+print("1. Service was bad")
+print("2. Service was okay")
+print("3. Service was good")
+print("4. Service was great")
+choice = input("Enter the number of your choice: ")
+if choice == '1':
+    print("Your total is", bill + bill*0)
+elif choice == '2':
+    print("Your total is", bill + bill*0.15)
+elif choice == '3':
+    print("Your total is", bill + bill*0.2)
+elif choice == '4':
+    print("Your total is", bill + bill*0.25)
+else:
+    print("Invalid choice, please choose a number between 1 and 4.")
