@@ -117,7 +117,7 @@ if number % 2 == 0:
 else:
     print("Your number is odd!") """
 
-bill = float(input("Bill Cost:"))
+""" bill = float(input("Bill Cost:"))
 print(type(bill))
 print("How was Service? Please choose an option:")
 print("1. Service was bad")
@@ -134,4 +134,19 @@ elif choice == '3':
 elif choice == '4':
     print("Your total is", bill + bill*0.25)
 else:
-    print("Invalid choice, please choose a number between 1 and 4.")
+    print("Invalid choice, please choose a number between 1 and 4.") """
+
+def factorfinder():
+    number = int(input("Number:"))
+    print(type(number))
+    factors = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+                factors.append(i)
+    return factors
+
+factors = factorfinder()
+print(f"The factors are: {factors}")
+
+
+            
