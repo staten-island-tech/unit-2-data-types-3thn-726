@@ -136,7 +136,7 @@ elif choice == '4':
 else:
     print("Invalid choice, please choose a number between 1 and 4.") """
 
-def factorfinder():
+""" def factorfinder():
     number = int(input("Number:"))
     print(type(number))
     factors = []
@@ -146,7 +146,41 @@ def factorfinder():
     return factors
 
 factors = factorfinder()
-print(f"The factors are: {factors}")
+print(f"The factors are: {factors}") """
+
+def gcf():
+    number1 = int(input("1st Number:"))
+    number2 = int(input("2nd Number:"))
+
+    print(type(number1))
+    print(type(number2))
+
+    factor1 = []
+    factor2 = []
+    same_numbers = []
+
+    for i in range(1, number1 + 1):
+        if number1 % 1 == 0:
+            factor1.append(i)
+
+    for i in range(1, number2 + 1):
+        if number1 % 1 == 0:
+            factor2.append(i)
+
+    if i in factor1 == i in factor2:
+        same_numbers.append(i)
+
+    gcf = max(same_numbers)
+    print("The GCF of your numbers is:", gcf)
+gcf()
+    
+
+
+
+
+
+    
+
 
 
             
