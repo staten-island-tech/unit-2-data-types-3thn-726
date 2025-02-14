@@ -148,7 +148,7 @@ else:
 factors = factorfinder()
 print(f"The factors are: {factors}") """
 
-def gcf():
+""" def gcf():
     number1 = int(input("1st Number:"))
     number2 = int(input("2nd Number:"))
 
@@ -167,20 +167,36 @@ def gcf():
         if number1 % 1 == 0:
             factor2.append(i)
 
-    if i in factor1 == i in factor2:
+    while i in factor1 == i in factor2:
         same_numbers.append(i)
 
     gcf = max(same_numbers)
-    print("The GCF of your numbers is:", gcf)
 gcf()
-    
+print("The GCF of your numbers is:", gcf) """
 
+number1 = int(input("1st Number:"))
+number2 = int(input("2nd Number:"))
 
+print(type(number1))
+print(type(number2))
 
+factor1 = []
+factor2 = []
+same_numbers = []
 
+for i in range(1, number1 + 1):
+    if number1 % i == 0:
+        for i in range(1, number2 + 1):
+            if number2 % i == 0:
+                same_numbers.append(i)
 
-    
+gcf = max(same_numbers)
+print("The GCF of your numbers is:", gcf)
 
-
-
-            
+""" def gamble(age, id):
+    if age >= 21 and id == True:
+        print("Gamble away")
+    elif age >= 21 and id == False:
+        print("You need ID verification")
+    else:
+        print("You're too young") """
