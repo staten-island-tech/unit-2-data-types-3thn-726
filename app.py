@@ -160,43 +160,34 @@ print(f"The factors are: {factors}") """
     same_numbers = []
 
     for i in range(1, number1 + 1):
-        if number1 % 1 == 0:
+        if number1 % i == 0:
             factor1.append(i)
 
     for i in range(1, number2 + 1):
-        if number1 % 1 == 0:
+        if number2 % i == 0:
             factor2.append(i)
 
-    while i in factor1 == i in factor2:
-        same_numbers.append(i)
+    for i in factor1:
+        if i in factor2:
+            same_numbers.append(i)
+    
+    gcf = max(same_numbers) if same_numbers else 1
+    print("The GCF of your numbers is:", gcf)
+gcf() """
 
-    gcf = max(same_numbers)
-gcf()
-print("The GCF of your numbers is:", gcf) """
+import random
+numbers = ['1','2','3','4','5','6','7','8','9','10']
+random_number = random.choice(numbers)
+number_guessed = (input("Number:"))
+if number_guessed == random_number:
+    print("Correct!")
+else:
+    if number_guessed > random_number:
+        print(input("Lower, try again:"))
 
-number1 = int(input("1st Number:"))
-number2 = int(input("2nd Number:"))
+    elif number_guessed < random_number:
+        print(input("Higher, try again:"))
 
-print(type(number1))
-print(type(number2))
-
-factor1 = []
-factor2 = []
-same_numbers = []
-
-for i in range(1, number1 + 1):
-    if number1 % i == 0:
-        for i in range(1, number2 + 1):
-            if number2 % i == 0:
-                same_numbers.append(i)
-
-gcf = max(same_numbers)
-print("The GCF of your numbers is:", gcf)
-
-""" def gamble(age, id):
-    if age >= 21 and id == True:
-        print("Gamble away")
-    elif age >= 21 and id == False:
-        print("You need ID verification")
     else:
-        print("You're too young") """
+        print("The machine broke")
+
