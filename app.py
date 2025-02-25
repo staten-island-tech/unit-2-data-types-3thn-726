@@ -175,19 +175,39 @@ print(f"The factors are: {factors}") """
     print("The GCF of your numbers is:", gcf)
 gcf() """
 
+""" def skins(money, age, isAvailable):
+    cost = int(input("cost:"))
+    money = int(input("Money:"))
+    age = int(input("Age:"))
+    if isAvailable == False:
+        return ("cannot buy")
+    if isAvailable == True:
+        if age < 18:
+            return ("cannot buy")
+        else:
+            if money >= cost:
+                return ("can buy")
+            else:
+                return ("cannot buy") """
+            
+
+
+
+
 import random
 numbers = ['1','2','3','4','5','6','7','8','9','10']
 random_number = random.choice(numbers)
 number_guessed = (input("Number:"))
+numbers_that_have_been_guessed:[]
 if number_guessed == random_number:
     print("Correct!")
 else:
-    if number_guessed > random_number:
-        print(input("Lower, try again:"))
+    while number_guessed < random_number:
+        print("Higher, try again.")
+        number_guessed
+    while number_guessed > random_number:
+        print("Lower, try again:")
+        number_guessed
 
-    elif number_guessed < random_number:
-        print(input("Higher, try again:"))
 
-    else:
-        print("The machine broke")
 
