@@ -194,7 +194,7 @@ gcf() """
 
 
 
-import random
+""" import random
 numbers = ['1','2','3','4','5','6','7','8','9','10']
 random_number = random.choice(numbers)
 number_guessed = (input("Number:"))
@@ -202,12 +202,32 @@ numbers_that_have_been_guessed:[]
 if number_guessed == random_number:
     print("Correct!")
 else:
-    while number_guessed < random_number:
-        print("Higher, try again.")
-        number_guessed
-    while number_guessed > random_number:
-        print("Lower, try again:")
-        number_guessed
+    while number_guessed != random_number:
+        if number_guessed < random_number:
+            print("Higher, try again.")
+            number_guessed
+        if number_guessed > random_number:
+            print("Lower, try again:")
+            number_guessed """
 
 
+def english_or_french():
+    t_T = []
+    s_S = []
+    text = input("Text:")
+
+    for letters in text:
+        if letters in text == "t" or "T":
+            t_T.append(letters)
+        if letters in text == "s" or "S":
+            s_S.append(letters)
+
+    number_oft = len(t_T)
+    number_ofs = len(s_S)
+    if number_oft > number_ofs:
+        print("Your text might be english")
+    else:
+        print("Your text might be")
+english_or_french()
+    
 
