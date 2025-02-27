@@ -194,40 +194,38 @@ gcf() """
 
 
 
-""" import random
-numbers = ['1','2','3','4','5','6','7','8','9','10']
+import random
+numbers = [1,2,3,4,5,6,7,8,9,10]
 random_number = random.choice(numbers)
-number_guessed = (input("Number:"))
-numbers_that_have_been_guessed:[]
+number_guessed = int(input("Number:"))
+numbers_that_have_been_guessed = []
 if number_guessed == random_number:
     print("Correct!")
-else:
-    while number_guessed != random_number:
-        if number_guessed < random_number:
-            print("Higher, try again.")
-            number_guessed
-        if number_guessed > random_number:
-            print("Lower, try again:")
-            number_guessed """
+    numbers_that_have_been_guessed.append(number_guessed)
+while number_guessed != random_number:
+    if number_guessed < random_number:
+        numbers_that_have_been_guessed.append(number_guessed)
+        number_guessed = int(input("Higher, try again:"))
+    else:
+        numbers_that_have_been_guessed.append(number_guessed)
+        number_guessed = int(input("Lower, try again:"))
+for numbers in numbers_that_have_been_guessed:
+    print("You have guessed:", numbers)
 
-
-def english_or_french():
-    t_T = []
-    s_S = []
+""" def english_or_french():
+    t_T = 0
+    s_S = 0
     text = input("Text:")
 
     for letters in text:
         if letters in text == "t" or "T":
-            t_T.append(letters)
+            t_T + 1
         if letters in text == "s" or "S":
-            s_S.append(letters)
+            s_S + 1
 
-    number_oft = len(t_T)
-    number_ofs = len(s_S)
-    if number_oft > number_ofs:
+    if t_T >= s_S:
         print("Your text might be english")
     else:
-        print("Your text might be")
+        print("Your text might be french")
 english_or_french()
-    
-
+     """
