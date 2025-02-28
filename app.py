@@ -159,19 +159,19 @@ print(f"The factors are: {factors}") """
     factor2 = []
     same_numbers = []
 
-    for i in range(1, number1 + 1):
-        if number1 % i == 0:
-            factor1.append(i)
+    for number in range(1, number1 + 1):
+        if number1 % number == 0:
+            factor1.append(number)
 
-    for i in range(1, number2 + 1):
-        if number2 % i == 0:
-            factor2.append(i)
+    for number in range(1, number2 + 1):
+        if number2 % number == 0:
+            factor2.append(number)
 
-    for i in factor1:
-        if i in factor2:
-            same_numbers.append(i)
+    for number in factor1:
+        if number in factor2:
+            same_numbers.append(number)
     
-    gcf = max(same_numbers) if same_numbers else 1
+    gcf = max(same_numbers)
     print("The GCF of your numbers is:", gcf)
 gcf() """
 
@@ -199,9 +199,10 @@ numbers = [1,2,3,4,5,6,7,8,9,10]
 random_number = random.choice(numbers)
 number_guessed = int(input("Number:"))
 numbers_that_have_been_guessed = []
-if number_guessed == random_number:
-    print("Correct!")
+while number_guessed == random_number:
+    print("Correct! The number was ", number_guessed)
     numbers_that_have_been_guessed.append(number_guessed)
+    print("Your guess history is:", numbers_that_have_been_guessed)
 while number_guessed != random_number:
     if number_guessed < random_number:
         numbers_that_have_been_guessed.append(number_guessed)
@@ -209,8 +210,7 @@ while number_guessed != random_number:
     else:
         numbers_that_have_been_guessed.append(number_guessed)
         number_guessed = int(input("Lower, try again:"))
-for numbers in numbers_that_have_been_guessed:
-    print("You have guessed:", numbers)
+print("Your guess history is:", numbers_that_have_been_guessed)
 
 """ def english_or_french():
     t_T = 0
@@ -227,5 +227,4 @@ for numbers in numbers_that_have_been_guessed:
         print("Your text might be english")
     else:
         print("Your text might be french")
-english_or_french()
-     """
+english_or_french() """
