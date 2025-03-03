@@ -199,10 +199,6 @@ numbers = [1,2,3,4,5,6,7,8,9,10]
 random_number = random.choice(numbers)
 number_guessed = int(input("Number:"))
 numbers_that_have_been_guessed = []
-while number_guessed == random_number:
-    print("Correct! The number was ", number_guessed)
-    numbers_that_have_been_guessed.append(number_guessed)
-    print("Your guess history is:", numbers_that_have_been_guessed)
 while number_guessed != random_number:
     if number_guessed < random_number:
         numbers_that_have_been_guessed.append(number_guessed)
@@ -210,7 +206,10 @@ while number_guessed != random_number:
     else:
         numbers_that_have_been_guessed.append(number_guessed)
         number_guessed = int(input("Lower, try again:"))
-print("Your guess history is:", numbers_that_have_been_guessed)
+if number_guessed == random_number:
+    numbers_that_have_been_guessed.append(number_guessed)
+    print("Correct! The number was ", number_guessed)
+    print("Your guess history is:", numbers_that_have_been_guessed)
 
 """ def english_or_french():
     t_T = 0
